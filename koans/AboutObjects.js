@@ -8,12 +8,13 @@ describe("About Objects", function () {
     });
 
     it("should confirm objects are collections of properties", function () {
-      expect(megalomaniac.mastermind).toBe(FILL_ME_IN);
+      expect(megalomaniac.mastermind).toBe("Joker");
     });
 
     it("should confirm that properties are case sensitive", function () {
-      expect(megalomaniac.henchwoman).toBe(FILL_ME_IN);
-      expect(megalomaniac.henchWoman).toBe(FILL_ME_IN);
+      expect(megalomaniac.henchwoman).toBe("Harley");
+      // To confirm that properties are case sensitive (the property name is henchwoman and not henchWoman)
+      expect(megalomaniac.henchWoman).toBe(undefined);
     });
   });
 
